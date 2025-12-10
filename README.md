@@ -3,44 +3,51 @@
 
 
 
-This repo has my solutions for the three problems given in Round 2.  
-Each problem gives one clue, and in the end all clues are combined to form the final key.
+Problem 1 – Grid Rotation
 
+Read a 5x5 grid and directions (L or R).
 
- Problem 1 – Grid Rotation
- I read the 5x5 grid and the directions (L or R).
- Each row is rotated by 1 position based on the direction.
- After all rotations, I took the middle row (3rd row).
- Then I added the ASCII values of all characters in that row.
+Rotate each row by 1 position based on the direction.
 
-Clue 1 = 385  
-Hex value = 181
+Take the middle row (3rd row) and add the ASCII values of all characters.
 
+Clue 1: 385
+Hex value: 181
 
- Problem 2 – String Processing
-Steps -
- Reverse the string.
- Remove every 3rd character.
- Shift each character by +2 (ASCII).
- Count vowels in the final result.
+Problem 2 – String Processing
+
+Steps:
+
+Reverse the string.
+
+Remove every 3rd character.
+
+Shift each character by +2 (ASCII).
+
+Count the vowels in the final string.
+
+Clue 2: 4
+
+Problem 3 – State Machine
+
+Rules:
+
+Even numbers → move one state forward.
+
+Prime numbers → jump directly to the final state.
+
+Odd composite numbers → stay in place.
+
+Count how many numbers reach the final state.
+
+Clue 3: 4
+
+Final Key
+
+Hex of Clue 1 = 181
 
 Clue 2 = 4
 
-
- Problem 3 – State Machine
-Rules I used:
- Even numbers move one state forward.
- Prime numbers directly jump to the final state.
- Odd composite numbers don’t move.
- I counted how many numbers end in the final state.
-
 Clue 3 = 4
 
-
-Final Key:
-hex(385) = 181  
-Clue 2 = 4  
-Clue 3 = 4  
- "4" repeated 4 times → 4444
-
-
+"4" repeated 4 times → 4444
